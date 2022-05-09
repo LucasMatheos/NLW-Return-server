@@ -6,9 +6,10 @@ import { routes } from "./routes";
 const app = express();
 
 app.use(
-  cors({
-    origin: "https://nlw-return-llmn7b4xe-lucasmatheos.vercel.app",
-  })
+  cors()
+  //   {
+  //   origin: "https://nlw-return-llmn7b4xe-lucasmatheos.vercel.app",
+  // }
 );
 app.use(express.json());
 app.use(routes);

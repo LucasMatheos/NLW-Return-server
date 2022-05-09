@@ -14,4 +14,5 @@ export class PrismaFeedbacksRepository implements FeedbackRepository {
       },
     });
   }
+
 }
