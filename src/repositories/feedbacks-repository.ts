@@ -12,4 +12,4 @@ export interface FeedbackGetData {
 
 export interface FeedbackRepository {
   create: (data: FeedbackCreateData) => Promise<void>;
-  }
+}

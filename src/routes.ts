@@ -24,11 +24,12 @@ routes.post("/feedbacks", async (req, res) => {
 routes.get("/feedbacks", async (req, res) => {
   const feedbacks = await prisma.feedback.findMany({
     select: {
+      id: true,
       type: true,
       comment: true,
       screenshot: true,
     },
   });
-  
+
   return res.status(201).json(feedbacks);
 });
